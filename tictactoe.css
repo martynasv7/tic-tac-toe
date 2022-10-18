@@ -1,0 +1,35 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+#game-board {
+    width: 90vmin;
+    height: 80vmin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+
+#game-board > div {
+    border: 5px solid black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .text {
+    font-size: 40px;
+  }
+
+  #current {
+    color: black;
+    position:absolute;
+    top: 17em;
+    font-size: 3em;
+  }
